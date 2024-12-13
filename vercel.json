@@ -23,7 +23,7 @@
     {
       "source": "/guides/:path*",
       "destination": "https://esy-logs.feather.blog/guides/:path*"
-    },
+    }
   ],
   "headers": [
     {
