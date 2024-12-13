@@ -25,12 +25,12 @@
       "destination": "https://esy-logs.feather.blog/guides/:path*"
     },
     {
-      "source": "/_feather",
-      "destination": "https://esy-logs.feather.blog/_feather"
+      "source": "/_feather/guides",
+      "destination": "https://esy-logs.feather.blog/_feather/guides"
     },
     {
-      "source": "/_feather/:path*",
-      "destination": "https://esy-logs.feather.blog/_feather/:path*"
+      "source": "/_feather/guides/:path*",
+      "destination": "https://esy-logs.feather.blog/_feather/guides/:path*"
     }
   ],
   "headers": [
@@ -81,6 +81,24 @@
     },
     {
       "source": "/_feather/:slug*",
+      "headers": [
+        {
+          "key": "X-Forwarded-Host",
+          "value": "devsubs.com"
+        }
+      ]
+    },
+    {
+      "source": "/_feather/guides",
+      "headers": [
+        {
+          "key": "X-Forwarded-Host",
+          "value": "devsubs.com"
+        }
+      ]
+    },
+    {
+      "source": "/_feather/guides/:slug*",
       "headers": [
         {
           "key": "X-Forwarded-Host",
