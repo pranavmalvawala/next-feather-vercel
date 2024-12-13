@@ -13,8 +13,12 @@
       "destination": "https://devsubs.feather.blog/_feather"
     },
     {
-      "source": "/_feather/:path*",
-      "destination": "https://devsubs.feather.blog/_feather/:path*"
+      "source": "/_feather/blog/:path*",
+      "destination": "https://devsubs.feather.blog/_feather/blog/:path*"
+    },
+    {
+      "source": "/_feather/guides/:path*",
+      "destination": "https://esy-logs.feather.blog/_feather/guides/:path*"
     },
     {
       "source": "/guides",
